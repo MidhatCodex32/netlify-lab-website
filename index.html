@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaTech Solutions</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; color: #172033; background: #f7f9fc; }
+    nav { background: #101827; color: white; padding: 18px 8%; display:flex; justify-content:space-between; align-items:center; }
+    nav h2 { letter-spacing: 1px; }
+    nav a { color:white; text-decoration:none; margin-left:24px; }
+    .hero { min-height: 72vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:60px 20px;
+      background: linear-gradient(135deg,#e9f2ff,#f7f9fc); }
+    .hero h1 { font-size: clamp(40px,7vw,72px); margin-bottom:18px; }
+    .hero p { max-width:700px; margin:0 auto 28px; font-size:20px; line-height:1.6; color:#526078; }
+    .btn { display:inline-block; padding:14px 26px; background:#172033; color:white; text-decoration:none; border-radius:8px; }
+    section { padding:70px 8%; }
+    section h2 { text-align:center; font-size:34px; margin-bottom:35px; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:22px; }
+    .card { background:white; padding:30px; border-radius:14px; box-shadow:0 8px 25px rgba(0,0,0,.07); }
+    .card h3 { margin-bottom:12px; }
+    .card p { color:#667085; line-height:1.6; }
+    .about { background:#fff; text-align:center; }
+    .about p { max-width:800px; margin:auto; line-height:1.8; color:#667085; }
+    .contact { text-align:center; }
+    footer { background:#101827; color:#cbd5e1; text-align:center; padding:24px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>NovaTech</h2>
+    <div><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div>
+      <h1>Build. Deploy. Grow.</h1>
+      <p>Modern digital solutions for growing businesses. This website is deployed through GitHub and Netlify as a cloud deployment project.</p>
+      <a class="btn" href="#services">Explore Services</a>
+    </div>
+  </header>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card"><h3>Web Development</h3><p>Responsive and modern websites designed for businesses and organizations.</p></div>
+      <div class="card"><h3>Cloud Deployment</h3><p>Fast and reliable deployment workflows using modern cloud platforms.</p></div>
+      <div class="card"><h3>UI/UX Design</h3><p>Clean interfaces focused on usability, accessibility, and user experience.</p></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>NovaTech Solutions helps organizations establish a professional digital presence through web development, cloud technologies, and practical software solutions.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's Work Together</h2>
+    <p style="margin-bottom:24px;color:#667085;">Have a project in mind? Get in touch with our team.</p>
+    <a class="btn" href="mailto:hello@example.com">Contact Us</a>
+  </section>
+
+  <footer>© 2026 NovaTech Solutions · Netlify Deployment Lab</footer>
+</body>
+</html>
